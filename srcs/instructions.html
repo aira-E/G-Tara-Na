@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G! Tara Na! About</title>
+    <link rel="icon" href="pictures/icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href = "style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="instructions">
+    <div class="navbar">
+        <a href="#" onclick="window.location.href = '../index.html'">
+        <a href="#" onclick="window.location.href = '../index.html'">
+            <img src="../srcs/pictures/icon.png" alt="Icon">
+        </a>
+        <p> G! Tara Na! </p>    
+        <div class="right_side">
+            <a href="#" onclick="window.location.href = '../index.html'">Home</a>
+            <a href="../srcs/about.html">About</a>
+            <a href="../srcs/instructions.html">How Does it Work</a>
+        </div>   
+    </div>
+
+    <div class="instructions_landing">
+        <div>
+            <h1> How does it Work </h1>
+            <p> Welcome to the heart of our chord wonderland! Navigating the intricacies of G! Tara Na is as straightforward as striking the perfect chord. Here's a symphony of simplicity guiding you through the melody of our platform: </p>
+            <div class="fender">
+                <img id="fender" src="pictures/logos/logo_fender.png" alt="">
+                <p> <a href='https://www.fender.com/articles/chords/read-guitar-chord-charts' target='_blank'>  Article by: Fender  </a> </p>
+            </div>
+            <img id="guitar" src="pictures/guitar.png">
+        </div>
+    </div>
+
+    <div class="instructions_chordchart">
+        <img id="musicnotes" src="pictures/musicnotes.png">
+        <div>
+            <h2> What is Guitar Chord Chart </h2>
+            <p> A guitar chord chart is a shorthand way of understanding which frets of which strings you should place your fingers on in order to play a specific chord. This diagram is displayed as a grid, consisting of vertical lines that represent the six strings of a guitar and horizontal lines that represent the frets on your guitar’s fretboard. The thicker black bar at the top of the diagram represents the guitar’s nut, giving you a visual starting point to discern the appropriate frets where you should place your fingers. </p>
+        </div>
+    </div>
+
+    <div class="instructions_readchordchart">
+        <h2> How to Read Guitar Chord Chart </h2>    
+        <p> Whether you’re a beginner guitarist or a seasoned player, learning how to read a guitar chord chart can help you more easily play a variety of chords and chord shapes.  </p>
+        
+        <!-- Vertical and Horizontal Lines -->
+        <div class="instructions_lines"> 
+            <div>
+                <h3> Vertical and Horizontal Lines </h3>
+                <p> The vertical lines of a chord chart represent each of the six strings of a guitar. 
+                    From lowest to highest, they are: </p>
+                    <ul>
+                       <li id="string" onmouseover="set6thString()" onmouseout="setBlankString()"> 6th (and lowest toned) string: low E   </li>  
+                       <li id="string" onmouseover="set5thString()" onmouseout="setBlankString()"> 5th string: A  </li>  
+                       <li id="string" onmouseover="set4thString()" onmouseout="setBlankString()"> 4th string: D  </li> 
+                       <li id="string" onmouseover="set3rdString()" onmouseout="setBlankString()"> 3rd string: G  </li> 
+                       <li id="string" onmouseover="set2ndString()" onmouseout="setBlankString()"> 2nd string: B  </li> 
+                       <li id="string" onmouseover="set1stString()" onmouseout="setBlankString()"> 1st (and highest toned) string high E </li>   
+                    </ul> 
+                <p> While each vertical line of a chord chart represents each of the six strings, the horizontal lines of a chord chart represent the frets of a guitar. Each horizontal line is an indicator of which fret of each string you should place your finger on in order to play a given chord. </p>
+            </div>
+            <div>
+                <img id="img3" src="pictures/strings/13.png">   
+            </div>
+        </div>
+
+        
+        <!-- Numbers and Dots -->
+        <div class="instructions_numberanddots">
+            <div>
+                <h3>Numbers and Dots</h3>
+                <p> Now that you know what the vertical and horizontal lines mean on a chord chart, it’s time to get down to what the numbers inside each of the dots on the corresponding strings and frets mean. Whenever you see a number inside a dot on a given correspondence point on a chord chart, it’s an indicator of what finger you should use to place on a given fret or across a series of frets in order to sound the correct note.
+                    Each of the given numbers inside a dot on a given fret line corresponds, as follows: </p>
+                <ul> 
+                    <li id="finger_positions" onmouseover="setIndexImage()" onmouseout="setOldImage()"> 1 = Index finger </li>
+                    <li id="finger_positions"  onmouseover="setMiddleImage()" onmouseout="setOldImage()"> 2 = Middle finger</li>
+                    <li id="finger_positions"  onmouseover="setRingImage()" onmouseout="setOldImage()"> 3 = Ring finger </li>
+                    <li id="finger_positions"  onmouseover="setPinkyImage()" onmouseout="setOldImage()"> 4 = Pinky finger</li>
+                </ul>           
+            </div>
+            <div>
+                <img id="img1" src="pictures/fingering/1.png">   
+            </div>  
+            <div>
+                <img id="img2" src="pictures/fingering/6.png">   
+            </div>
+        </div>
+
+        <!-- X's and O's -->
+        <div class="instructions_XsOs">
+            <div>
+                <h3> X’s and O’s </h3>
+                <p> When looking at a chord chart, you may see “X’s and “O”s above the thick black line that represents the nut of your guitar. It’s not a wonky version of Tic-Tac-Toe. Rather, it’s shorthand for which strings you should strum and which strings you should mute when playing a given chord.
+                    An “X” above a string indicates that the string should be muted when strumming a chord. An “O” above a string means that the string should be played in the open position (without a finger on any of the frets aligned with that string) in a given chord. These shorthand notations of “X’s and “O’s can help you easily see which strings you’ll need to omit from a strumming pattern, which strings are played in an open position, as well as which strings need you to place a finger on a given fret in order to strum a specific chord.
+                </p>
+
+                <ul> 
+                    <li id="finger_positions" onmouseover="setXString()" onmouseout="setBlankXOString()"> X’s - string should be muted </li>
+                    <li id="finger_positions"  onmouseover="setOString()" onmouseout="setBlankXOString()"> O's - string should be open </li>
+                </ul>
+            </div>
+            <div>
+                <img id="img4" src="pictures/XsOs/20.png">   
+            </div>
+        </div>
+
+        <div class="box_clickable">
+            <a href="../index.html#chord_checker">
+                <h2>CHECK IF YOU ARE PLAYING</h2>
+                <h1>THE RIGHT CHORD</h1>
+            </a>
+        </div>
+        
+    <div class="footer">
+        <div class="partnership_container">
+            <div class="partnership_txt">
+                <h3> In partnership of: </h3>
+            </div>
+            <div class="partners">
+                <a href="https://www.fender.com/">
+                    <img src="../srcs/pictures/logos/logo_fender.png" alt="Fender Logo"> </a>
+            
+                <a href="https://chordpic.com/">
+                    <img src="../srcs/pictures/logos/logo_ChordPic.png" alt="ChordPic Logo"> </a>
+            
+                <a href="https://www.instagram.com/republikha_ph/">
+                    <img src="../srcs/pictures/logos/logo_republikha.png" alt="Republikha Logo"> </a>
+            </div>
+        </div>
+        <div class="navpane">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../srcs/about.html">About</a></li>
+                <li><a href="../srcs/instructions.html">How it Works</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="scripts/charthighlighter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

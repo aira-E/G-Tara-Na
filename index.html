@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G! Tara Na!</title>
+    <link rel="icon" href="srcs/pictures/icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href = "srcs/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="index">
+    <div class="navbar">
+        <a href="index.html">
+            <img src="srcs/pictures/icon.png" alt="Icon">
+        </a>
+        <p> G! Tara Na! </p>    
+        <div class="right_side">
+            <a href="index.html">Home</a>
+            <a href="srcs/about.html">About</a>
+            <a href="srcs/instructions.html">How Does it Work</a>
+        </div>   
+    </div>
+
+    <div class="landingpage_container">
+        <div class="leftlandingpage">
+            <div class="header">
+                <h1> G! Tara Na! </h1>
+                <h2> Harmony Unleashed: Your Ultimate Guide to Guitar Chords!</h2>
+            </div>
+        
+            <div class="taglines">
+                <div class="searchbar">
+                    Search a Chord 
+                    <i class="fa fa-search icon"></i>
+                </div>
+                    <a href="srcs/instructions.html">
+                        <h3><u><i> How it Works </i></u></h3>
+                    </a>
+            </div>
+        
+        
+            <div class="taglines">
+                <div class="box">
+                    <i class="fa fa-hand-point-up icon"></i>
+                    <p> Easy to Use </p>
+                </div>
+            
+                <div class="box">
+                    <i class="fa fa-assistive-listening-systems icon"></i>
+                    <p> Ear Trainer </p>
+                </div>
+            
+                <div class="box">
+                    <i class="fa fa-music icon"></i>
+                    <p> Harmonic Bliss </p>
+                </div>
+            </div>
+        
+<div class="box_clickable"  id="feedbackDiv" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h2> WRITE US A </h2>
+                <h1> FEEDBACK </h1>
+            </div>        
+        </div>
+
+        <div class="feedback_modal">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"> RATE US!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="picture">Upload Picture:</label><br>
+                        <input type="file" id="picture" name="picture"><br><br>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="feedback">Feedback:</label><br>
+                        <textarea id="feedback" name="feedback"></textarea><br><br>
+                        <label for="rate">Rate:</label><br>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="modal-footer" type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightlandingpage">
+            <img  id="placeholderpic" src="srcs/pictures/placeholderpic.png" alt="">
+                <i id="dyk" class="fa-regular fa-question mark icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+        </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div id="modal" class="modal-dialog modal-dialog-centered">
+                <div id="modal" class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel"> Do you know?  </h1>
+                        <br class="br"></br>
+                        <p> Guitar and Piano have the same chords? </p>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="piano_container" class="modal-body_piano">
+                        <div class="piano-container"></div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+                  </script>
+            <!--<div class="placeholderpic_container">
+            <a href="srcs/profile.html">About
+                    <img  id="pic1" src="srcs/pictures/placeholderpic.png" alt="">
+                </a>
+                <img id="pic2" src="srcs/pictures/placeholderpic1.jpeg" alt="">  
+            </div>-->
+        </div>
+
+        <!--<div class="rightlandingpage">
+                <img  id="pic1" src="srcs/pictures/placeholderpic.png" alt="">
+                <i id="dyk" class="fa-regular fa-question mark icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+         </div>-->
+
+    </div>
+    <div class="chordchecker_container" id="chord_checker">
+    <h1 id="subtitle"> Guitar Chord Checker </h1> 
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-majorchords-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-majorchords" type="button" role="tab" aria-controls="nav-majorchords"
+                aria-selected="true"> Major Chords </button>
+
+                <button class="nav-link" id="nav-minorchords-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-minorchords" type="button" role="tab" aria-controls="nav-minorchords"
+                aria-selected="false"> Minor Chords </button>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active p-3" id="nav-majorchords" role="tabpanel"
+            aria-labelledby="nav-majorchords-tab">
+            <div class="chordchecker_container_carousel">
+                <div class="chords_carousel">
+                    <div id="Major_carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                          
+                        <div class="carousel-inner">
+                          <div id="chord_carousel-item" class="carousel-item active">
+                            <img id="chorddiagram" src="srcs/chords/majors/a.svg" class="d-block w-100" alt="...">
+                            <div id="A-Major_playButton" class="clickable">
+                                <audio id="A-Major_audioPlayer"></audio>
+                                <i class="fa fa-play-circle icon"></i>
+                            </div>
+                          </div>
+
+                          <div id="chord_carousel-item" class="carousel-item">
+                            <img id="chorddiagram" src="srcs/chords/majors/B.svg" class="d-block w-100" alt="...">
+                            <div id="B-Major_playButton" class="clickable">
+                                <audio id="B-Major_audioPlayer"></audio>
+                                <i class="fa fa-play-circle icon"></i>
+                            </div>
+                        </div>
+
+                          <div id="chord_carousel-item" class="carousel-item">
+                            <img id="chorddiagram" src="srcs/chords/majors/c.svg" class="d-block w-100" alt="...">
+                            <div id="C-Major_playButton" class="clickable">
+                                <audio id="C-Major_audioPlayer"></audio>
+                                <i class="fa fa-play-circle icon"></i>
+                            </div>
+                            </div>    
+                            
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/majors/d.svg" class="d-block w-100" alt="...">
+                                <div id="D-Major_playButton" class="clickable">
+                                    <audio id="D-Major_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/majors/E.svg" class="d-block w-100" alt="...">
+                                <div id="E-Major_playButton" class="clickable">
+                                    <audio id="E-Major_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/majors/F.svg" class="d-block w-100" alt="...">
+                                <div id="F-Major_playButton" class="clickable">
+                                    <audio id="F-Major_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/majors/G.svg" class="d-block w-100" alt="...">
+                                <div id="G-Major_playButton" class="clickable">
+                                    <audio id="G-Major_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="chordchecker_content">
+                    <div class="chords">
+                        <h2> Major Guitar Chords </h2>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"> A </button>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"> B </button>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"> C </button>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"> D </button>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"> E </button>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"> F </button>
+                        <button id="majorchords" type="button" data-bs-target="#Major_carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"> G </button>
+                    </div>
+                    
+                    <div class="checker"> 
+                        <h2> Play your guitar </h2>
+                        <p> Hit the mic button then play your guitar to test if it is the accurate chord! </p>
+                        <div class="mic">
+                            <i class="fa fa-microphone icon" onclick="toggleAnimation(event)"></i>
+                        </div>
+                    </div>
+
+                    <div class="checked_results">
+                        <div class="correct results">
+                            <i class="fa fa-check-circle icon"></i>
+                            <div>
+                                <h3> Correct </h3>
+                                <p> you are playing the right chord </p>
+                            </div> 
+                        </div>
+
+                        <div class="incorrect results">
+                            <i id="icon_wrong" class="fa fa-times-circle icon"></i>
+                            <div>
+                                <h3>Incorrect </h3>
+                                <p> you are playing the wrong chord </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-minorchords" role="tabpanel"
+            aria-labelledby="nav-minorchords-tab">
+            <div class="chordchecker_container_carousel">
+                <div class="chords_carousel">
+                    <div id="Minor_carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button id="minorchords"  type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                          
+                        <div class="carousel-inner">
+                          <div id="chord_carousel-item" class="carousel-item active">
+                            <img id="chorddiagram" src="srcs/chords/minors/A minor.svg" class="d-block w-100" alt="...">
+                            <div id="A-Minor_playButton" class="clickable">
+                                <audio id="A-Minor_audioPlayer"></audio>
+                                <i class="fa fa-play-circle icon"></i>
+                            </div>
+                          </div>
+
+                          <div id="chord_carousel-item" class="carousel-item">
+                            <img id="chorddiagram" src="srcs/chords/minors/B minor.svg" class="d-block w-100" alt="...">
+                            <div id="B-Minor_playButton" class="clickable">
+                                <audio id="B-Minor_audioPlayer"></audio>
+                                <i class="fa fa-play-circle icon"></i>
+                            </div>
+                        </div>
+
+                          <div id="chord_carousel-item" class="carousel-item">
+                            <img id="chorddiagram" src="srcs/chords/minors/C minor.svg" class="d-block w-100" alt="...">
+                            <div id="C-Minor_playButton" class="clickable">
+                                <audio id="C-Minor_audioPlayer"></audio>
+                                <i class="fa fa-play-circle icon"></i>
+                            </div>
+                            </div>    
+                            
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/minors/D minor.svg" class="d-block w-100" alt="...">
+                                <div id="D-Minor_playButton" class="clickable">
+                                    <audio id="D-Minor_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/minors/E minor.svg" class="d-block w-100" alt="...">
+                                <div id="E-Minor_playButton" class="clickable">
+                                    <audio id="E-Minor_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/minors/F minor.svg" class="d-block w-100" alt="...">
+                                <div id="F-Minor_playButton" class="clickable">
+                                    <audio id="F-Minor_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+
+                            <div id="chord_carousel-item" class="carousel-item">
+                                <img id="chorddiagram" src="srcs/chords/minors/G minor.svg" class="d-block w-100" alt="...">
+                                <div id="G-Minor_playButton" class="clickable">
+                                    <audio id="G-Minor_audioPlayer"></audio>
+                                    <i class="fa fa-play-circle icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="minorchords"  class="carousel-control-prev" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button id="minorchords"  class="carousel-control-next" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="chordchecker_content">
+                    <div class="chords">
+                        <h2> Minor Guitar Chords </h2>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"> Am </button>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"> Bm </button>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"> Cm </button>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"> Dm </button>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"> Em </button>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"> Fm </button>
+                        <button id="minorchords" type="button" data-bs-target="#Minor_carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"> Gm </button>
+                    </div>
+                    
+                    <div class="checker"> 
+                        <h2> Play your guitar </h2>
+                        <p> Hit the mic button then play your guitar to test if it is the accurate chord! </p>
+                        <div class="mic">
+                            <i class="fa fa-microphone icon" onclick="toggleAnimation(event)"></i>
+                        </div>                    
+                    </div>
+
+                    <div class="checked_results">
+                        <div class="correct results">
+                            <i class="fa fa-check-circle icon"></i>
+                            <div>
+                                <h3> Correct </h3>
+                                <p> you are playing the right chord </p>
+                            </div> 
+                        </div>
+
+                        <div class="incorrect results">
+                            <i id="icon_wrong" class="fa fa-times-circle icon"></i>
+                            <div>
+                                <h3>Incorrect </h3>
+                                <p> you are playing the wrong chord </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <h1> Testimonials </h1>
+   <div class="testimonial_container">
+    <div class="vinyl_container"> <img class="vinyl" src="srcs/pictures/vinyl.png" alt=""> </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="artist_container">
+                <div class=""> <img class="artist_profile" src="srcs/pictures/artists&instructors/artist1.jpg" alt="">                </div>
+                <div class="artist_info">
+                    <h2> Leila Manalac </h2>
+                    <!--<i class="fa fa-quote-left icon"></i>-->
+                    <p> Discovering G! Tara Na has been an absolute game-changer for my guitar journey! The intuitive chord charts and interactive tools have transformed my practice sessions. Finally, a platform that simplifies the complexity of chords, making learning enjoyable and accessible. Thank you for creating a space where every strummer can find their perfect chord. Highly recommend to musicians of all levels!</p>
+                    <!-- <i class="fa fa-quote-right icon"></i>  -->
+                </div>
+                <div class="artist_rate">
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                </div>
+            </div>          </div>
+          <div class="carousel-item">
+            <div class="artist_container">
+                <img class="artist_profile" src="srcs/pictures/artists&instructors/artist2.jpg" alt="">
+                <div class="artist_info">
+                    <h2> Saltine Pepper </h2>
+                    <p> Our band discovered this fantastic guitar chord website, and it's been an absolute game-changer for our music creation process. The extensive chord library and accurate diagrams have significantly enriched our songwriting. It's become an indispensable tool during rehearsals, helping us experiment with different chord progressions effortlessly. This website has become an integral part of our creative journey, and we highly recommend it to fellow musicians out there. </p>
+                </div>
+                <div class="artist_rate">
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                </div>
+            </div>          </div>
+          <div class="carousel-item">
+            <div class="artist_container">
+                <img class="artist_profile" src="srcs/pictures/artists&instructors/artist3.jpg" alt="">
+                <div class="artist_info">
+                    <h2> Jeanna Maurice </h2>
+                    <p> As an aspiring guitarist, I stumbled upon this amazing guitar chord website, and it has been a game-changer for me. The chord diagrams are clear and easy to understand, making learning new chords a breeze. The interactive features and extensive chord library have made my practice sessions more enjoyable and productive. Kudos to the team behind this fantastic resource! </p>
+                </div>
+                <div class="artist_rate">
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                    <i class="fa fa-star icon"></i>
+                </div>
+
+            </div>          
+        </div>
+        <button id="carousel-control-prev-testimonials" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button id="carousel-control-next-testimonials" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+
+</div>
+
+    <div class="footer">
+        <div class="partnership_container">
+            <div class="partnership_txt">
+                <h3> In partnership of: </h3>
+            </div>
+            <div class="partners">
+                <a href="https://www.fender.com/">
+                    <img src="srcs/pictures/logos/logo_fender.png" alt="Fender Logo"> </a>
+            
+                <a href="https://chordpic.com/">
+                    <img src="srcs/pictures/logos/logo_ChordPic.png" alt="ChordPic Logo"> </a>
+            
+                <a href="https://www.instagram.com/republikha_ph/">
+                    <img src="srcs/pictures/logos/logo_republikha.png" alt="Republikha Logo"> </a>
+            </div>
+        </div>
+        <div class="navpane">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="srcs/about.html">About</a></li>
+                <li><a href="srcs/instructions.html">How it Works</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="srcs/scripts/piano.js"></script>
+    <script src="srcs/scripts/togglemic.js"> </script>
+    <script src="srcs/scripts/rotate.js"></script>
+    <script src="srcs/scripts/chordplayer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
